@@ -8,21 +8,50 @@
 			
 			body{
 				background-image:linear-gradient(to right, blue, aqua) ;
-				color: white;
+				color: black;
 			}
 		
 		
-			.imgs{
+			.img{
 			
-				position: relative;
+				position :absolute;
+				
+				width100%;
+				top: 0px;
+				margin:0;
+				z-index: 0;
 			
 			}
+			#info{
+				position :relative;
+				
+				width100%;
+				top: 0px;
+				margin:0;
+				z-index: 1;
+				font-size: 25px;
+			}
+			#info2{
+				position :relative;
+				
+				width100%;
+				top: 0px;
+				margin:0;
+				z-index: 2;
+				font-size: 25px;
+			}
+			
+			
 		
 		</style>
 	</head>
 	<body>
 		<h2 id="nivel">Nível de Escolaridade</h2>
 		
+		<div class="img">
+		 	<img alt="" src="imagens/Certificados.jpg"style="width:100%;height: 100%;  ">
+		 </div>
+		<div id="info">
 		<ul>
 			<li>Ensino Técnico- <strong>Técnico de Informática - IFPB Cursando</strong></li>
 			<li>Ensino Técnico- <strong>Bombeiro Hidráulico - Senai 2010</strong></li>
@@ -31,7 +60,8 @@
 			<li>Ensino Fundamental - <strong>Arlindo Bento 2006</strong></li>
 		
 		</ul>
-		
+		</div>
+		<div id="info2">
 		<h2>Atividade ExtraCurriculares</h2>
 		<ul>
 			<li>1° atividade</li>
@@ -47,6 +77,6 @@
 		</ul>
 		
 		<a href= "index.html">Voltar a Pagina inicial</a>
-
+		</div>
 	</body>
 </html>
